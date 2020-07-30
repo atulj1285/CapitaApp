@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+  }
+  .container{
+    width:70%;
+    margin: auto;
+  }
+
+  .bgImage{
+    background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+   height: 400px;
+   width: 100%;
+  }
+  .footer{
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: #eee;
+    padding: 3px 15px;
+    text-align: center;
+  }
+
+  .btnSpace{
+    margin: 0px 3px;
+  }
+  .header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+  }

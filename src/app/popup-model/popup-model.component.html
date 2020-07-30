@@ -1,0 +1,60 @@
+
+<div class="container container-reset" id="popup-model">
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Task to add or update</h4>
+        <button id="release-single-btn" type="button" class="close pull-right" aria-label="Close"
+            (click)="bsModalRef.hide()">
+            <span class="icon-icn-close"></span>
+        </button>
+    </div>
+    <div class="modal-body"> 
+             
+              <div class="form-group">
+                <label for="alterEgo">Title</label>
+                <input type="text"  class="form-control" id="alterEgo"
+                       [(ngModel)]="data.shortDesc" name="alterEgo">
+              </div> 
+              <div class="form-group">
+                <label for="alterEgo">ID</label>
+                <input type="text"  class="form-control" id="alterEgo"
+                       [(ngModel)]="data.id" name="alterEgo">
+              </div> 
+              <div class="form-group">
+                <label for="alterEgo">Priority</label>
+                <input type="text"  class="form-control" id="alterEgo"
+                       [(ngModel)]="data.priority" name="alterEgo">
+              </div>  
+              
+              <div class="form-group">
+                <label for="alterEgo">Status</label>
+                <input type="text"  class="form-control" id="alterEgo"
+                       [(ngModel)]="data.status" name="alterEgo">
+              </div>  
+              <div class="form-group">
+                <label for="alterEgo">Description</label>
+                <input type="text"  class="form-control" id="alterEgo"
+                       [(ngModel)]="data.description" name="alterEgo">
+              </div> 
+              
+             
+        
+    </div>
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col-6">
+                <button id="release-single-cancel-btn" type="button" class="btn btn-with-outline float-left"
+                    (click)="onCancelClick()">
+                  CANCEL</button>
+            </div>
+            <div class="col-6">
+                <button id='btnRelease' type="button" *ngIf='!showBtn' class="btn btn-primary float-right"
+                    (click)="onUpdateTask(data)" >
+                    UPDATE</button>
+                    <button id='btnRelease' type="button" *ngIf='showBtn' class="btn btn-primary float-right"
+                    (click)="onCreateTask(data)" >
+                    ADD</button>
+                   
+            </div>
+        </div>
+    </div>
+</div>
